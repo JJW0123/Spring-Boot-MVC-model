@@ -3,7 +3,6 @@ package spring_example.hello_spring.service;
 import java.util.List;
 import java.util.Optional;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import spring_example.hello_spring.domain.Member;
@@ -14,7 +13,8 @@ public class MemberService {
 
     private final MemberRepository memberRepository;
 
-    @Autowired
+    // 4.3부터 생성자가 하나라면 @Autowired 생략 가능
+    // @Autowired
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
