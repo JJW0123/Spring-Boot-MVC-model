@@ -1,16 +1,13 @@
 package spring_example.hello_spring.repository;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.ArrayList;
 import java.util.Map;
 import java.util.Optional;
 
-import org.springframework.stereotype.Repository;
-
 import spring_example.hello_spring.domain.Member;
 
-@Repository
 public class MemoryMemberRepository implements MemberRepository {
 
     // 실무에서는 동시성 문제로 concurrentHashMap을 사용

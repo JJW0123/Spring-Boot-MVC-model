@@ -3,12 +3,9 @@ package spring_example.hello_spring.service;
 import java.util.List;
 import java.util.Optional;
 
-import org.springframework.stereotype.Service;
-
 import spring_example.hello_spring.domain.Member;
 import spring_example.hello_spring.repository.MemberRepository;
 
-@Service
 public class MemberService {
 
     private final MemberRepository memberRepository;
